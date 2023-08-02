@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cine</title>
+</head>
+
+<body>
+  <script>
+    const ingreso1 = prompt('ingrese carta 1')
+    const ingreso2 = prompt('ingrese carta 2')
+
+    let valor1 = 0
+    if (ingreso1 === 'J' || ingreso1 === 'Q' || ingreso1 === 'K') {
+      valor1 = 10
+    } else if (ingreso1 === 'A') {
+      valor1 = 11
+    } else if (parseInt(ingreso1) >= 1 && parseInt(ingreso1) <= 10) {
+      valor1 = parseInt(ingreso1)
+    } else {
+      alert('carta inexistente')
+    }
+
+    let valor2 = 0
+    if (ingreso2 === 'J' || ingreso2 === 'Q' || ingreso2 === 'K') {
+      valor2 = 10
+    } else if (ingreso2 === 'A') {
+      valor2 = 11
+    } else if (parseInt(ingreso2) >= 1 && parseInt(ingreso2) <= 10) {
+      valor2 = parseInt(ingreso2)
+    } else {
+      alert('carta inexistente')
+    }
+
+    const sumaDeLasDosCartas = valor1 + valor2
+
+    const condicion = sumaDeLasDosCartas === 21
+
+    if (condicion) {
+      alert('es black jack')
+    } else {
+      alert('no es black jack')
+    }
+  </script>
+</body>
+
+</html>

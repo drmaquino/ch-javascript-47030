@@ -1,0 +1,88 @@
+algoritmos:
+
+dar mi clase de coder:
+
+enciendo la compu
+abro zoom
+me logueo en zoom
+abro la plataforma de coder
+me logueo en coder
+navego hasta el curso que corresponde
+busco la clase de hoy
+click en el link para ir al vivo
+
+preparar la comida:
+
+si es temprano: preparo el desayuno
+si es el mediodia: preparo el almuerzo
+si es de tarde: preparo la merienda
+si es de noche: preparo la cena
+
+
+si (alguna condicion se cumple) entonces (algo que va a suceder en consecuencia)
+
+si (tengo hambre) entonces (me preparo algo de comer)
+
+si (llueve)
+      entonces (me quedo en casa mirando tutoriales de react en youtube)
+      y sino (me voy al parque a hacer yoga) 
+
+si (se cumple alguna condicion) entonces (consecuencia 1) sino (consencuencia 2)
+
+----------------------------------------------------------------------------------------------
+
+receta para cocinar una torta:
+
+en un bowl
+
+poner harina
+
+si quiero una torta vegana:
+  uso leche de almendras
+  le pongo margarina vegetal
+  le pongo linaza
+sino:
+  uso leche de vaca
+  le pongo manteca
+  le pongo huevos
+
+sintaxis JS:
+
+if (condicion) {
+  // instrucciones para condicion verdadera
+}
+else {
+  // instrucciones para condicion falsa
+}
+
+-------------------------------------------------------------------------------------------------
+
+situacion:
+cine
+
+edad minima = 13 años
+
+algoritmo para decidir si dejo pasar a alguien a ver la pelicula:
+
+const condicion = edad >= 13
+
+if (condicion) {
+  // puede ver la peli
+}
+else {
+  // no puede ver la peli
+}
+
+-------------------------------------------------------------------------------------------------
+
+abcdef g hijklmno p qrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 
+
+G < P
+
+
+ 1 2   (3)  4 5 6    (7)   8 9
+<----------------------------->
+
+3 < 7
+
+(perro > gato) es true o false

@@ -1,0 +1,28 @@
+edad = 4
+edad = '4'
+
+dni = '12.345.678'
+
+direccion = 'rivadavia 1234'
+
+telefono = '541112345678'
+
+BOOLEANO
+
+--------------------------------------------
+
+datos: tienen tipo y valor
+
+variables -> cajitas con nombre
+
+
+asignacion: guardar un dato en una variables
+
+sintaxis:
+(const/let) nombreDeLaVariable = datoQueQueremosGuardar
+
+SIEMPRE CONST!
+salvo.......que lo quiera modificar
+
+
+
