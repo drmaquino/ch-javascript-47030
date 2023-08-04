@@ -1,0 +1,58 @@
+signos:
+
+=     operador de asignacion: toma el valor que se encuentra a la derecha del igual y lo almacena dentro de la variable a la izq del igual
+
+ejemplo:
+
+const edad = 15
+15 es el valor que se almacena, edad es la variable en donde se almacena el 15
+
+---------------------------------------------------------
+
+==    operador de comparacion: se fija si dos valores son parecidos. sirve para ver si dos valores que no necesariamente son del mismo tipo, serían iguales si convirtiera alguno de ellos al tipo del otro.
+
+ejemplo:
+
+15 == '15'  ?   TRUE
+
+porque si hago parseInt('15') me da 15, que es igual a 15
+
+no vamos a usar ==
+por qué? por que es peligroso, ya que le permitimos a JS convertir los tipos de datos sin que se lo pidamos, y esto a veces puede ser un problema
+
+---------------------------------------------------------
+
+===   operador de comparacion ESTRICTA: se fija si dos valores son realmente iguales, o sea, coinciden sin necesidad de convertir ninguno de ellos.
+
+ejemplo:
+
+15 === 15   ?   TRUE
+15 === '15'   ?   FALSE
+
+vamos a usar siempre este operador, y no el anterior!
+
+---------------------------------------------------------
+validaciones por tipo:
+
+typeof 5
+'number'
+
+typeof 'hola'
+'string'
+
+typeof true
+'boolean'
+
+const nombre = prompt('ingrese su nombre')
+
+if (typeof nombre === 'string') {
+  // hacer algo
+}
+
+if (typeof 'hola'=== 'string') {
+  console.log('es un string')
+} else {
+  console.log('no es un string')
+}
+
+// es un string
