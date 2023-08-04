@@ -1,0 +1,92 @@
+tipo de dato:
+booleano
+true / false
+
+verdadero / false
+
+proposiciones:
+tienen un valor de verdad
+significa que puede ser:
+verdaderas o falsas
+
+ejemplo:
+
+proposicion:
+hoy llovio todo el dia
+
+valor de verdad:
+falso
+
+proposicion:
+me llamo marian y vivo en australia
+
+1) me llamo marian: verdadero
+2) vivo en australia: falso
+1) y 2) : falso
+
+proposicion:
+hoy cocino fideos o pido pizza
+1) falso
+2) falso
+1) o 2) verdadero
+
+resumen:
+
+AND: si todas las condiciones son verdaderas, entonces la proposicion completa es verdaderas. caso contrario, es todo falso.
+
+un falso, hace todo falso. sino, true
+
+
+OR: si al menos una de las condiciones es verdadera, entonces la proposicion completa es verdadera. caso contrario, si ninguna se cumple, es falsa.
+
+un verdadero hace todo verdadero, sino falso.
+
+NOT:
+
+proposicion:
+1) me llamo osvaldo
+
+vdv: false
+
+proposicion:
+NOT 1)
+no me llamo osvaldo
+
+vdv: true
+
+ej2:
+COSAS QUE SE SOBRE MI: tengo 37 años
+
+const marianTiene35 = edadMariano === 35
+(la edad de mariano es 35)
+
+vdv marianTiene35 ?
+false
+
+vdv NOT marianTiene35 ?
+NOT (la edad de mariano es 35) ===
+la edad de mariano NO es 35
+es verdadero
+
+marianTiene35 es una variable que contiene un dato de tipo booleano cuyo valor es FALSE
+
+EN JAVASCRIPT
+
+if (!marianTiene35) { // si marianTiene35 es VERDADERO/TRUE entonces....
+  alert('hola')
+} else {
+  alert('chau')
+}
+
+
+
+
+
+
+
+
+
+
+
+---------------------------
+

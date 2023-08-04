@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exacto</title>
+</head>
+
+<body>
+  <script>
+    alert('me levanto')
+
+    // ciclo condicional
+    let cantKilosQueTengoQueComer = parseFloat(prompt('cuantos kg queres comer hoy?'))
+    while (isNaN(cantKilosQueTengoQueComer)) {
+      cantKilosQueTengoQueComer = parseFloat(prompt('eso no es un numero, por favor, ingresalo nuevamente'))
+    }
+
+    // ciclo por conteo (exacto)
+    // let cantKilosQueYaComi = 0
+    // while (cantKilosQueYaComi < cantKilosQueTengoQueComer) {
+    //   alert('adentro un kilito de pechuga')
+    //   cantKilosQueYaComi = cantKilosQueYaComi + 1
+    //   alert('ya comi ' + cantKilosQueYaComi + 'kilos')
+    // }
+
+    for (let cantKilosQueYaComi = 0; cantKilosQueYaComi < cantKilosQueTengoQueComer; cantKilosQueYaComi = cantKilosQueYaComi + 1) {
+      alert('adentro un kilito de pechuga')
+      alert('le sumo 1 a los ' + cantKilosQueYaComi + ' que ya había comido (total: ' + (cantKilosQueYaComi + 1) + ' kgs)')
+      // aca se incrementa en 1, al final del bloque
+    }
+
+    alert('a mimir')
+  </script>
+</body>
+
+</html>
