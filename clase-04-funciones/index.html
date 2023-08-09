@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones</title>
+</head>
+
+<body>
+  <h1>Funciones</h1>
+  <script>
+    // // declaracion de una variable
+    // // le doy un nombre y un valor
+    // const nombre = 'marian';
+
+    // // declaracion (creacion) de una funcion
+    // // le doy un nombre y un comportamiento asociado 
+    // function saludar() {
+    //   alert("¡Hola estudiantes!");
+    //   alert("¡hora de trabajar!");
+    //   console.log("¡Hola estudiantes!");
+    // }
+
+    // // llamado o invocacion de la funcion
+    // for (let veces = 0; veces < 10; veces++) {
+    //   saludar()
+    // }
+
+    // function saludoAmistoso(nombre) {
+    //   // let nombre = 'Stefany'
+    //   console.log(nombre)
+    //   alert('hola, ' + nombre + ', cheee como estas? todo bien? tanto tiempo!')
+    // }
+
+    // saludoAmistoso('Stefany')
+    // saludoAmistoso('Mariano')
+    // saludoAmistoso('Hernan')
+
+    // me pasan un monto y me dicen el porcentaje de descuento
+    // ejemplo: sale 100 pesos y tiene un 15% de descuento
+    // function aplicarDescuento(montoInicial, porcentajeDescuento) {
+    //   // regla de tres simple
+    //   // montoInicial es el 100%
+    //   // monto a descontar es 20% 
+    //   // monto inicial por 20% / 100 = monto a descontar
+    //   const montoADescontar = montoInicial / 100 * porcentajeDescuento
+    //   const montoFinal = montoInicial - montoADescontar
+    //   alert(montoFinal)
+    // }
+
+    // aplicarDescuento(100, 35)
+    // aplicarDescuento(500, 10)
+
+    // -----------------------------------------------------------------
+    function aplicarDescuento(montoInicial, porcentajeDescuento) {
+      const montoADescontar = montoInicial / 100 * porcentajeDescuento
+      const montoFinal = montoInicial - montoADescontar
+      return montoFinal
+    }
+
+    // alert(montoADescontar)
+    // ReferenceError! no existe por fuera de la funcion!
+    // es local a la funcion! 
+
+    // entrada de datos
+    const montoInicial = parseFloat(prompt('ingrese el monto inicial'))
+    const porcentajeDescuento = parseFloat(prompt('ingrese el descuento a aplicar'))
+
+    // procesamiento de los datos (en informacion)
+    const resultado = aplicarDescuento(montoInicial, porcentajeDescuento)
+
+    // salida de la informacion
+    alert(resultado)
+
+    //-------------------------------------------------------------------
+
+    // function calcular(primerNumero, segundoNumero, operador) {
+    // switch (operador) {
+    //   case "+":
+    //     return primerNumero + segundoNumero;
+    //     break;
+    //   case "-":
+    //     return primerNumero - segundoNumero;
+    //     break;
+    //   case "*":
+    //     return primerNumero * segundoNumero;
+    //     break;
+    //   case "/":
+    //     return primerNumero / segundoNumero;
+    //     break;
+    //   default:
+    //     return 0;
+    //     break;
+    // }
+
+    // es lo mismo que:
+    //   if (operador === '+') {
+    //     return primerNumero + segundoNumero;
+    //   } else if (operador === '-') {
+    //     return primerNumero - segundoNumero;
+    //   } else if (operador === '*') {
+    //     return primerNumero * segundoNumero;
+    //   } else if (operador === '/') {
+    //     return primerNumero / segundoNumero;
+    //   } else {
+    //     return 0;
+    //   }
+    // }
+
+    // // entrada de datos
+    // const primerNum = parseFloat(prompt('ingrese el primer numero'))
+    // const segundNum = parseFloat(prompt('ingrese el segundo numero'))
+    // const simboloOperacion = prompt('ingrese la operacion')
+
+    // // procesamiento de los datos (en informacion)
+    // const resultado = calcular(primerNum, segundNum, simboloOperacion)
+
+    // // salida de la informacion
+    // alert(resultado)
+
+    // ------------------------------------------------
+
+    // entrada de datos
+
+    const totalDeAlumnes = parseInt(prompt('total de alumnes'));
+    let contadorDePresentes = 0; // variable global
+
+    for (let cant = 0; cant < totalDeAlumnes; cant++) {
+      const resp = prompt('alumno ' + cant + ' esta presente?'); // variable local, esta declarada dentro del bloque del for
+      if (resp === 'si') {
+        // puedo usar esta variable pq es global
+        contadorDePresentes++; // contadorDePresentes = contadorDePresentes + 1
+      }
+    }
+
+    alert(resp) // no la puedo usar, pq no es global
+
+    // total -> 100%
+    // parcial -> x?
+    // x = parcial * 100 / total
+
+    const porcentajeDePresentismo = contadorDePresentes * 100 / totalDeAlumnes;
+
+    alert(porcentajeDePresentismo + '%')
+  </script>
+</body>
+
+</html>
