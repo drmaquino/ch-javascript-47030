@@ -1,0 +1,44 @@
+// poca abstraccion (casi nula) -> es decir: muy especifico
+
+// lavado de dientes
+// // // abro el pomo de pasta
+// // // pongo pasta en el cepillo de dientes
+// // // llevo el cepillo a la boca
+// // // muevo el cepillo haciendo friccion contra los dientes
+// // // me enjuago el excedente de pasta
+
+// lavarse la cara
+// // // abro el agua
+// // // junto las manos en forma de cuenco
+// // // lleno las manos con agua
+// // // me tiro el agua en la cara
+// // // cierro el agua
+// // // me seco la cara
+
+// peinarse
+// // // agarro el peine
+// // // lo llevo a mi cabeza
+// // // lo muevo de un lado al otro
+// // // me miro al espejo
+// // // repito hasta quedar conforme
+
+//-----------------------------------------------
+
+// mas abstracto que el anterior
+
+// // lavarse los dientes
+// // lavarse la cara
+// // peinarse
+
+//---------------------------------------------------
+// mas abstracto que el anterior
+
+// prepararme para ir a trabajar
+// vestirme
+
+
+// // ponerme las zapatillas
+
+// // // agarrar los cordones
+// // // ajustarlos
+// // // hacer un nudo en cada zapatilla
